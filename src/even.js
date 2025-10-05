@@ -24,7 +24,8 @@ const game = (name) => {
     if (guess.toUpperCase() == answer.toUpperCase()) {
       console.log('Correct!')
       current_round++
-    } else {
+    }
+    else {
       console.log(`'${guess}' is wrong answer ;(. Correct answer was '${answer}'.`)
       break
     }
@@ -32,7 +33,8 @@ const game = (name) => {
 
   if (current_round > MAX_ROUNDS) {
     console.log(`Congratulations, ${name}!`)
-  } else {
+  }
+  else {
     console.log(`Let's try again, ${name}!`)
   }
 }
