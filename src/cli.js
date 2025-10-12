@@ -4,10 +4,10 @@ const capitalize = (str) => {
   return str.charAt(0).toUpperCase() + str.slice(1)
 }
 
-const greetings = () => {
+const greet = () => {
   const name = capitalize(readlineSync.question('May I have yout name? '))
   console.log(`Hello, ${name}!`)
   return name
 }
 
-export default greetings
+export default greet

@@ -1,7 +1,5 @@
 #!/usr/bin/env node
-import greetings from '../src/cli.js'
+import greet from '../src/cli.js'
 
 console.log('Welcome to the Brain Games!')
-let name = greetings()
-
-export default name
+greet()
