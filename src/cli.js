@@ -5,7 +5,7 @@ const capitalize = (str) => {
 }
 
 const greet = () => {
-  const name = capitalize(readlineSync.question('May I have yout name? '))
+  const name = capitalize(readlineSync.question('May I have your name? '))
   console.log(`Hello, ${name}!`)
   return name
 }
