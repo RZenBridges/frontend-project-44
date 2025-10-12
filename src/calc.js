@@ -1,7 +1,5 @@
-const MIN = 0
-const MAX = 100
+import randomInt from './utils.js'
 
-const randomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
 const add = (a, b) => a + b
 const subtract = (a, b) => a - b
 const multiply = (a, b) => a * b
@@ -14,8 +12,8 @@ const operatorMap = {
 }
 
 const generateGameContext = () => {
-  let a = randomInt(MIN, MAX)
-  let b = randomInt(MIN, MAX)
+  let a = randomInt()
+  let b = randomInt()
   let operator = operators[randomInt(0, operators.length - 1)]
 
   return {

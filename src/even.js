@@ -1,16 +1,11 @@
-const MIN = 1
-const MAX = 100
-
-const randomInt = (min, max) => {
-  return Math.floor(Math.random() * (max - min) + 1) + min
-}
+import randomInt from './utils.js'
 
 const isEven = (number) => {
   return number % 2 === 0
 }
 
 const generateGameContext = () => {
-  let number = randomInt(MIN, MAX)
+  let number = randomInt()
   return {
     description: 'Answer "yes" if the number is even, otherwise answer "no".',
     question: number,

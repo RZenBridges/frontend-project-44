@@ -5,6 +5,7 @@ const MAX_ROUNDS = 3
 
 const run = (game, rounds = MAX_ROUNDS) => {
   let current_round = 1
+  console.log('Welcome to the Brain Games!')
   let player = greet()
 
   while (current_round <= rounds) {
